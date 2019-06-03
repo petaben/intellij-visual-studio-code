@@ -118,5 +118,22 @@
   { "key": "shift+enter",
     "command": "editor.action.insertLineAfter",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+cmd+g",
+      "command": "editor.action.selectHighlights",
+      "when": "editorFocus"
+  },
+
+  //Add this two to intellij too as they have no keybinding by default
+  {
+      "key": "ctrl+shift+up",
+      "command": "editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
+  },
+  {
+      "key": "ctrl+shift+down",
+      "command": "editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
   }
 ]
